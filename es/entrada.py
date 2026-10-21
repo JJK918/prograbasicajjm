@@ -2,13 +2,7 @@ import csv
 from pathlib import Path
 
 def validar_entrada(entrada):
-    try:
-        return int(entrada)
-    except ValueError:
-        try:
-            return float(entrada)
-        except ValueError:
-            raise ValueError("La entrada no se puede convertir a un numero")
+    return int(entrada)
 
 def recibir_entrada(texto):
     entrada = input(texto)
