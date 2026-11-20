@@ -10,12 +10,12 @@ Este repositorio reúne lo que trabajamos durante el semestre en **Programación
 
 El proyecto se divide en varias funciones principales dependiendo del archivo que ejecutes:
 
-* **Calculadora interactiva (`main.py`):** Te muestra un menú en consola, te pide elegir una operación (`suma`, `resta`, `multiplicacion` o `division`) y dos números. Cada vez que haces un cálculo, guarda la operación en `historial.csv` y actualiza automáticamente una imagen llamada `grafica_sesion.png` con el conteo de las operaciones que llevas hechas.
-* **Calculadora con lenguaje natural (`main_regex.py`):** Hace lo mismo que `main.py`, pero en lugar de escribir solo el nombre exacto de la operación, puedes escribir frases como *"suma 10 y 5"* o *"multiplica 4 por 3"*. Además, aquí también puedes pedir operaciones estadísticas (`promedio`, `mediana`, `moda`) que se calculan usando los resultados anteriores de tu sesión.
-* **Lectura desde archivos (`main_archivo.py`):** En vez de pedir datos por teclado, lee una lista de operaciones desde un archivo `.csv` (como `csvs/programa.csv`) o `.json` (como `jsons/programa.json`) y las va resolviendo una por una.
-* **Gráficas con Matplotlib (`matematicas/graficas/` y `ejemplo.py`):**
-  * **Gráficas de la sesión:** Cada vez que corres `main.py` o `main_regex.py`, la función `graficar_historial()` revisa cuántas veces usaste cada operación y genera dos gráficas lado a lado (una de pastel y otra de barras) guardándolas en `grafica_sesion.png`.
-  * **Script de ejemplo (`ejemplo.py`):** Es el ejercicio de visualización con `matplotlib` y `numpy`. Crea una sola imagen (`grafica.png`) dividida en tres paneles:
+**Calculadora interactiva (`main.py`):** Te muestra un menú en consola, te pide elegir una operación (`suma`, `resta`, `multiplicacion` o `division`) y dos números. Cada vez que haces un cálculo, guarda la operación en `historial.csv` y actualiza automáticamente una imagen llamada `grafica_sesion.png` con el conteo de las operaciones que llevas hechas.
+**Calculadora con lenguaje natural (`main_regex.py`):** Hace lo mismo que `main.py`, pero en lugar de escribir solo el nombre exacto de la operación, puedes escribir frases como *"suma 10 y 5"* o *"multiplica 4 por 3"*. Además, aquí también puedes pedir operaciones estadísticas (`promedio`, `mediana`, `moda`) que se calculan usando los resultados anteriores de tu sesión.
+**Lectura desde archivos (`main_archivo.py`):** En vez de pedir datos por teclado, lee una lista de operaciones desde un archivo `.csv` (como `csvs/programa.csv`) o `.json` (como `jsons/programa.json`) y las va resolviendo una por una.
+**Gráficas con Matplotlib (`matematicas/graficas/` y `ejemplo.py`):**
+ **Gráficas de la sesión:** Cada vez que corres `main.py` o `main_regex.py`, la función `graficar_historial()` revisa cuántas veces usaste cada operación y genera dos gráficas lado a lado (una de pastel y otra de barras) guardándolas en `grafica_sesion.png`.
+ **Script de ejemplo (`ejemplo.py`):** Es el ejercicio de visualización con `matplotlib` y `numpy`. Crea una sola imagen (`grafica.png`) dividida en tres paneles:
     1. Una recta ($y = x$) junto con una onda senoidal ($y = \sin(x)$) y sus límites en $1$ y $-1$.
     2. Una parábola ($y = x^2$) dibujada de tres formas distintas para comparar qué tan suave se ve según la cantidad de puntos (`range`, `np.arange` y `np.linspace`).
     3. Una gráfica de pastel con porcentajes para tres categorías de operaciones.
