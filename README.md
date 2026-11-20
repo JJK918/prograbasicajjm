@@ -24,7 +24,7 @@ El proyecto se divide en varias funciones principales dependiendo del archivo qu
 
 ## 2. ¿Cómo fue construido?
 
-Para no tener todo amontonado en un solo archivo, el código está separado en carpetas (paquetes de Python) usando archivos `__init__.py`:
+Para no tener todo amontonado en un solo archivo, el código está separado en carpetas usando archivos `__init__.py`:
 
 ```text
 programacionBasica/
